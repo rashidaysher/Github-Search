@@ -14,10 +14,10 @@ export class GitServiceService {
   token = `access_token= ${environment.myToken}`
   constructor(private Http:HttpClient) { }
 
-  retriveUser(){
+  retriveUser(searchUser:any){
     return new Promise((resolve, reject) => {
      this.userProfile=[];
-     this.Http.get(this.myURL+this.token).toPromise().then(
+     this.Http.get(this.myURL+searchUser+this.token).toPromise().then(
        (results)=>{this.userProfile.push(results);
         // resolve();
 
