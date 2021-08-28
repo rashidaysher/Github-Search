@@ -11,6 +11,22 @@ export class GitServiceService {
 
   myURL= "https://api.github.com/user/"
 
-  Token = `access_token= ${environment.myToken}`
+  token = `access_token= ${environment.myToken}`
   constructor(private Http:HttpClient) { }
+
+  retriveUser(){
+    return new Promise((resolve, reject) => {
+     this.userProfile=[];
+     this.Http.get(this.myURL+this.token).toPromise().then(
+       (results)=>{this.userProfile.push(results);
+        // resolve();
+
+       },
+       (error)=>{
+         reject()
+       }
+     )
+
+    })
+  }
 }
