@@ -10,6 +10,7 @@ import { GitDetailsComponent } from './git-details/git-details.component';
 import { GitSearchComponent } from './git-search/git-search.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
+import { SearchUComponent } from './search-u/search-u.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SearchComponent } from './search/search.component';
     GitDetailsComponent,
     GitSearchComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    SearchUComponent
   ],
   imports: [
     BrowserModule,
