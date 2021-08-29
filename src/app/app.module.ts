@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { RepoComponent } from './repo/repo.component';
 import { GitDetailsComponent } from './git-details/git-details.component';
 import { GitSearchComponent } from './git-search/git-search.component';
+import { HomeComponent } from './home/home.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RepoComponent,
     GitDetailsComponent,
-    GitSearchComponent
+    GitSearchComponent,
+    HomeComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
