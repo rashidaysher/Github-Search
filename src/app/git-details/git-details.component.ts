@@ -14,7 +14,8 @@ export class GitDetailsComponent implements OnInit {
   getUser(searchUser:any){
     this.gitService.retriveUser(searchUser).then(
       (success)=>{
-        this.userProfile= this.gitService.userProfile
+        this.userProfile= this.gitService.userProfile;
+        console.log(this.userProfile)
       },
       (error)=>{
         return error;

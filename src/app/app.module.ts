@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { RepoComponent } from './repo/repo.component';
 import { GitDetailsComponent } from './git-details/git-details.component';
@@ -18,6 +19,7 @@ import { GitSearchComponent } from './git-search/git-search.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

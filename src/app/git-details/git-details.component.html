@@ -1,5 +1,10 @@
-<p>git-details works!</p>
- <div *ngFor = let user of user>
-    <h1>Name{{users.name}}</h1> 
+<app-git-search (searchEmitter)=getUser($event)></app-git-search>
 
-</div> 
+<div *ngFor= "let git of  userProfile">
+    <h1>Name: {{git.name}}</h1>
+    <img src="{{git.avatar_url}}" alt="">
+    <h1></h1>
+    
+    
+</div>
+ 
