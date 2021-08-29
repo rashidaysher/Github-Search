@@ -6,8 +6,8 @@ import { SearchUComponent } from './search-u/search-u.component';
 import { GitDetailsComponent } from './git-details/git-details.component';
 
 const routes: Routes = [
-  {path:'',component:GitDetailsComponent},
-  {path:'User',component:SearchComponent},
+  {path:'',component:HomeComponent},
+  {path:'User',component:GitDetailsComponent},
   {path:'Repo',component:SearchUComponent}
 ];
 

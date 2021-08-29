@@ -1,16 +1,40 @@
 <app-git-search (searchEmitter)=getUser($event)></app-git-search>
 
 <div *ngFor= "let git of  userProfile">
-    <h2>Name: {{git.name}}</h2>
-    <img src="{{git.avatar_url}}" alt=""> <br>
-    <h5> Repositories: {{git.public_repos}}</h5>
-    <h5>User Id : {{git.id}}</h5>
-    <h5>My Location: {{git.location}}</h5>
-    <h5>login: {{git.login}}</h5>
-    <h5>followers: {{git.followers}}</h5>
-    <h5>following: {{git.following}}</h5>
-    <!-- <h5>Projects: {{git.repos_url}}</h5> -->
+   
+    <!-- <img src="{{git.avatar_url}}" alt=""> <br> -->
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{git.avatar_url}}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Name: {{git.name}} A full-stack web developer, based in Nairobi, Kenya.</p>
+        </div>
+      </div>
+   
     
+    <!-- <h5>Projects: {{git.repos_url}}</h5>  -->
+    
+     <div class="card" style="width: 18rem;">
+        <div class="card-header">
+         <h4>My Info</h4> 
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">User Id : {{git.id}}</li>
+          <li class="list-group-item">My Location: {{git.location}}</li>
+          <li class="list-group-item">login: {{git.login}}</li>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">
+         <h4>Info</h4> 
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">following: {{git.following}}</li>
+          <li class="list-group-item">followers: {{git.followers}}</li>
+          <li class="list-group-item">Repositories: {{git.public_repos}}</li>
+        </ul>
+      </div>
+
+
     
 </div>
- 
+  
