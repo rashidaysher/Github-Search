@@ -1,10 +1,18 @@
 <app-git-search (searchEmitter)=getUser($event)></app-git-search>
 
 <div *ngFor= "let git of  userProfile">
-    <h1>Name: {{git.name}}</h1>
-    <img src="{{git.avatar_url}}" alt="">
-    <h1></h1>
+    <h2>Name: {{git.name}}</h2>
+    <img src="{{git.avatar_url}}" alt=""> <br>
+    <h5> Repositories: {{git.public_repos}}</h5>
+    <h5>User Id : {{git.id}}</h5>
+    <h5>My Location: {{git.location}}</h5>
+    <h5>login: {{git.login}}</h5>
+    <!-- <h5>Projects: {{git.repos_url}}</h5> -->
     
     
 </div>
  
+<div *ngFor= "let repo for repo">
+
+
+</div>

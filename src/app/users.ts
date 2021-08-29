@@ -7,4 +7,5 @@ export class Users {
     following:any;
     followers:any;
     public_repos:any;
+    // repos_url:any;
 }
