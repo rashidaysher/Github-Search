@@ -1,2 +1,51 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
 
+body{
+    background-image: url(../src/assets/images/blue.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: azure;
+}
+
+#kadi{
+    margin: 25px;
+    background-color:white;
+    height: 40vh;
+    justify-content: center;
+}
+
+#kad{
+    height: 30vh;
+    background-color: crimson;
+}
+
+#cad{
+    height: 30vh;
+    background-color: grey;
+}
+
+#cadb{
+    height: 30vh;
+}
+
+#cadb ul li{
+    margin: 20px;
+    text-align: center;
+}
+
+#kay{
+    background-color:turquoise;
+    border-radius: 200px;
+    border: 20px;
+}
+
+/* navigation bar */
+
+#menu ul li{
+    list-style: none;
+    flex-direction:column ;
+    float: left;
+    padding-left: 230px;
+    color: black;
+}

@@ -1,0 +1,19 @@
+ <app-git-search (searchEmitter)=retriveUser($event)></app-git-search>
+ <div class="row">
+<div *ngFor='let rpo of myRepo' class="col-md-3">
+  
+    <div class="card text-white bg-primary mb-3" >
+        <div class="card-header" id="head">Repo description</div>
+        <div class="card-body">
+         
+          <h2>{{rpo.name}}</h2> 
+          <p>{{rpo.description}}</p> 
+          <h5>{{rpo.language}}</h5>
+          <h2>{{rpo.created_at|dateAgo}}</h2>
+        </div>
+      </div>
+      
+
+    </div>    
+</div>
+

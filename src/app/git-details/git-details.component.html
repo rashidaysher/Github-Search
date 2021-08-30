@@ -2,39 +2,67 @@
 
 <div *ngFor= "let git of  userProfile">
    
-    <!-- <img src="{{git.avatar_url}}" alt=""> <br> -->
-    <div class="card" style="width: 18rem;">
+    
+   
+    
+    <div  class="card" style="width: 18rem;" id="kadi">
+        
         <img class="card-img-top" src="{{git.avatar_url}}" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Name: {{git.name}} A full-stack web developer, based in Nairobi, Kenya.</p>
+       
+          <p class="card-text" style="color:crimson;">Name: {{git.name}} A full-stack web developer, based in Nairobi, Kenya.</p>
+        
+      
+    </div>
+    
+    <div class="row" >
+        <div class="col-sm-6" id="kad">
+          <div class="card">
+            <div class="card-body" id="cadb">
+              <h5 class="card-title">My Info</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">User Id : {{git.id}}</li>
+                <li class="list-group-item">My Location: {{git.location}}</li>
+                <li class="list-group-item">login: {{git.login}}</li>
+              </ul>
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" id="cad">
+          <div class="card">
+            <div class="card-body" id="cadb">
+              <h5 class="card-title">title</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">following: {{git.following}}</li>
+                <li class="list-group-item">followers: {{git.followers}}</li>
+                <li class="list-group-item" id="kay">Repositories: {{git.public_repos}}</li>
+              </ul>
+              
+            </div>
+          </div>
         </div>
       </div>
-   
     
     <!-- <h5>Projects: {{git.repos_url}}</h5>  -->
     
-     <div class="card" style="width: 18rem;">
-        <div class="card-header">
-         <h4>My Info</h4> 
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">User Id : {{git.id}}</li>
-          <li class="list-group-item">My Location: {{git.location}}</li>
-          <li class="list-group-item">login: {{git.login}}</li>
-        </ul>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <div class="card-header">
-         <h4>Info</h4> 
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">following: {{git.following}}</li>
-          <li class="list-group-item">followers: {{git.followers}}</li>
-          <li class="list-group-item">Repositories: {{git.public_repos}}</li>
-        </ul>
-      </div>
-
-
     
+    
+</div>
+<div class="row">
+  
+<div *ngFor="let repo of userRepo" appHighlight class="col-md-4">
+  
+
+<div class="card" >
+  <div class="card-body" style="color: black;">
+    <h3>{{repo.name}}</h3>
+    <p>{{repo.description}}</p>
+    <h5>{{repo.language}}</h5>
+    <h4>{{repo.created_at}}</h4>
+    <a href="https://github.com/rashidaysher" class="btn btn-primary">View Github</a>
+  </div>
+</div>
+
+</div>
 </div>
   

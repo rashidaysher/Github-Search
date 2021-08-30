@@ -11,6 +11,8 @@ import { GitSearchComponent } from './git-search/git-search.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { SearchUComponent } from './search-u/search-u.component';
+import { HighlightDirective } from './highlight.directive';
+import { DateAgoPipe } from './pipes/date-ago.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SearchUComponent } from './search-u/search-u.component';
     GitSearchComponent,
     HomeComponent,
     SearchComponent,
-    SearchUComponent
+    SearchUComponent,
+    HighlightDirective,
+    DateAgoPipe
   ],
   imports: [
     BrowserModule,

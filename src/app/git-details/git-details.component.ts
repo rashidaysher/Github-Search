@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GitServiceService } from '../git-service.service';
+import { GitUser } from '../git-user';
 import { Users } from '../users';
 
 @Component({
@@ -9,6 +10,7 @@ import { Users } from '../users';
 })
 export class GitDetailsComponent implements OnInit {
   userProfile:Users[]=[];
+  userRepo:GitUser[]=[];
 
   constructor(public gitService:GitServiceService) { }
   getUser(searchUser:any){
@@ -19,12 +21,21 @@ export class GitDetailsComponent implements OnInit {
       },
       (error)=>{
         return error;
+
+      }
+      
+    );
+    this.gitService.getRepo(searchUser).subscribe(
+      (success)=>{
+this.userRepo=success;
+return (this.userRepo)
       }
     )
   }
 
   ngOnInit(): void {
     this.getUser("rashidaysher");
+
   }
 
 }

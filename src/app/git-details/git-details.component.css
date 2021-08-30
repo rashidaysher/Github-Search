@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,4 +9,12 @@ body{
 }
 .card{
     margin: 15px;
+} */
+
+.card{
+    margin-bottom: 35px;
+}
+
+.card a{
+background-color: turquoise;
 }
