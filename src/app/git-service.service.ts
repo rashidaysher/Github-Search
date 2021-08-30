@@ -16,8 +16,9 @@ export class GitServiceService {
   myRepos:GitRepo[]=[]; //added
 
   myURL= "https://api.github.com/users/"
+  mine = "Mr4S8SSFJOFK3gO7oI"
 
-  token = `?access_token=`;
+  token = `?access_token=${environment.myToken}${this.mine}`;
   constructor(private Http:HttpClient) { }
 
   retriveUser(searchUser:any){
