@@ -10,6 +10,7 @@ body{
 
 #kadi{
     margin: 25px;
+    margin-top: 20px;
     background-color:white;
     height: 40vh;
     justify-content: center;
@@ -18,11 +19,13 @@ body{
 #kad{
     height: 30vh;
     background-color: crimson;
+    /* margin-top: 30px; */
 }
 
 #cad{
     height: 30vh;
     background-color: grey;
+    margin-top: 30px;
 }
 
 #cadb{
